@@ -126,3 +126,33 @@ Can be expanded with login and database features
 The Email Sender Web Application demonstrates how a web application can send emails using a backend server. This project helps in understanding concepts like frontend and backend communication, Spring Boot development, and email integration using SMTP.
 
 The system can be further improved by adding user authentication, an inbox feature, and database storage.
+
+
+
+/*
+# Mail System Project
+
+## Overview
+This project is a simple Mail Sending System built using Spring Boot.
+
+## Technologies Used
+- Java
+- Spring Boot
+- Maven
+- HTML
+- CSS
+
+## Features
+- Send email using SMTP
+- Simple web interface
+- Backend using Spring Boot
+
+## How to Run
+1. Install Java
+2. Install Maven
+3. Run:
+   mvn spring-boot:run
+
+## Author
+Guru Balkunde
+*/

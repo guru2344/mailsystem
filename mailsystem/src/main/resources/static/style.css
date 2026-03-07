@@ -10,9 +10,9 @@ body{
 font-family:'Roboto', sans-serif;
 background:linear-gradient(135deg,#f2f2f2,#e6f0ff);
 min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
+/* display:flex; */
+justify-items:center;
+align-content:center;
 }
 
 /* Title */
@@ -75,6 +75,20 @@ cursor:pointer;
 transition:0.3s;
 }
 
+/* footer */
+
+.footer{
+    margin-top: 20px;
+    padding: 50px;
+   width:90%;
+    background-color: #000000;
+    justify-items:center;
+align-content:center;
+}
+.footer p{
+    color: #f2f2f2;
+    font-family:'Poppins', sans-serif;
+}
 /* Button hover */
 button:hover{
 background:#0056b3;

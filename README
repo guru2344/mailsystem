@@ -1,0 +1,128 @@
+Email Sender Web Application
+1. Project Overview
+
+The Email Sender Web Application is a web-based system that allows users to send emails through a simple interface. The application is developed using Java and Spring Boot for backend processing and HTML, CSS, and JavaScript for the frontend.
+
+The system allows a user to enter the sender email address, receiver email address, subject, and message. Once the user clicks the send button, the system connects to the Gmail SMTP server and sends the email.
+
+This project helps beginners understand how web applications work and how frontend and backend communicate with each other.
+
+2. Technologies Used
+Backend
+
+Java
+
+Spring Boot
+
+Apache Maven
+
+Frontend
+
+HTML
+
+CSS
+
+JavaScript
+
+Email Service
+
+Gmail SMTP Server
+
+3. Project Structure
+mailsystem
+│
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com.example.mailsystem
+│   │   │        MailSystemApplication.java
+│   │   │        MailController.java
+│   │   │        EmailRequest.java
+│   │   │
+│   │   └── resources
+│   │        application.properties
+│   │        static
+│   │            index.html
+│
+└── pom.xml
+
+Explanation:
+
+MailSystemApplication.java → Main class that starts the Spring Boot application
+
+MailController.java → Handles email sending requests
+
+EmailRequest.java → Model class storing email details
+
+index.html → User interface for sending email
+
+application.properties → Configuration settings
+
+4. Module Description
+1. Main Application Module
+
+The main module starts the application using Spring Boot. It initializes the server and loads all required configurations.
+
+2. Controller Module
+
+The controller receives the email data from the frontend and processes the request to send an email using the SMTP server.
+
+3. Model Module
+
+The model class stores email information such as sender email, receiver email, subject, and message.
+
+4. Frontend Module
+
+The frontend contains the HTML page where users enter the email details and send the message.
+
+5. System Working
+
+The user opens the web application in a browser.
+
+The user enters the sender email, receiver email, subject, and message.
+
+The user clicks the Send button.
+
+The request is sent to the backend server.
+
+The Spring Boot application processes the request.
+
+The system connects to Gmail SMTP.
+
+The email is sent to the receiver successfully.
+
+6. How to Run the Project
+
+Step 1: Install Java JDK
+
+Step 2: Install Apache Maven
+
+Step 3: Open the project folder in Command Prompt
+
+Step 4: Run the following command:
+
+mvn spring-boot:run
+
+Step 5: Open a browser and visit:
+
+http://localhost:8080
+
+Step 6: Enter email details and click Send
+
+7. Advantages
+
+Easy to use interface
+
+Fast email sending process
+
+Simple project for beginners
+
+Uses modern Spring Boot framework
+
+Can be expanded with login and database features
+
+8. Conclusion
+
+The Email Sender Web Application demonstrates how a web application can send emails using a backend server. This project helps in understanding concepts like frontend and backend communication, Spring Boot development, and email integration using SMTP.
+
+The system can be further improved by adding user authentication, an inbox feature, and database storage.

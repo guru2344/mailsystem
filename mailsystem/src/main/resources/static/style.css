@@ -1,0 +1,103 @@
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Roboto', sans-serif;
+background:linear-gradient(135deg,#f2f2f2,#e6f0ff);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* Title */
+.title{
+font-family:'Playfair Display', serif;
+font-size:36px;
+text-align:center;
+margin-bottom:15px;
+color:#333;
+}
+
+/* Container Card */
+.container{
+width:90%;
+max-width:420px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+/* Hover card effect */
+.container:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Inputs */
+input, textarea{
+width:100%;
+padding:12px;
+margin-top:12px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:15px;
+font-family:'Poppins', sans-serif;
+transition:0.3s;
+}
+
+/* Input focus */
+input:focus, textarea:focus{
+border-color:#007bff;
+outline:none;
+box-shadow:0 0 5px rgba(0,123,255,0.4);
+}
+
+/* Button */
+button{
+background:#007bff;
+color:white;
+padding:12px;
+border:none;
+width:100%;
+margin-top:18px;
+border-radius:8px;
+font-size:16px;
+font-family:'Poppins', sans-serif;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* Button hover */
+button:hover{
+background:#0056b3;
+transform:scale(1.03);
+}
+
+/* Mobile Responsive */
+@media (max-width:500px){
+
+.container{
+padding:20px;
+}
+
+.title{
+font-size:28px;
+}
+
+input, textarea{
+font-size:14px;
+}
+
+button{
+font-size:15px;
+}
+
+}

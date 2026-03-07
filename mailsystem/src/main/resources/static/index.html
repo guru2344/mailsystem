@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+ <title>Mail ME</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Send Email</h2>
+        <input id="from" value="gurub2024@gmail.com" readonly>
+        <input id="to" placeholder="To Email">
+        <input id="subject" placeholder="Subject">
+        <textarea id="message" placeholder="Message"></textarea>
+        <button onclick="sendEmail()">Send</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        function sendEmail(){
+        let data={
+            from:document.getElementById("from").value,
+            to:document.getElementById("to").value,
+            subject:document.getElementById("subject").value,
+            message:document.getElementById("message").value
+        };
+        fetch("/sendMail",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(data)
+        })
+        .then(res=>res.text())
+        .then(data=>{
+            document.getElementById("result").innerHTML=data;
+        });
+    }
+</script>
+</body>
+</html>
